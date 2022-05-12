@@ -1,0 +1,29 @@
+{
+	"extends": "@sapphire/ts-config",
+	"compilerOptions": {
+		"rootDir": "src",
+		"outDir": "dist",
+		"tsBuildInfoFile": "dist/.tsbuildinfo",
+		"lib": ["es5", "es6", "dom"],
+		"target": "es2019",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"strictPropertyInitialization": true,
+		"baseUrl": ".",
+		"paths": {
+			"@cat-lib/*": ["src/lib/*"],
+			"@cat-commands/*": ["src/commands/*"],
+			"@cat-customs/*": ["src/customs/*"],
+			"@cat-models/*": ["src/models/*"],
+			"@cat-modules/*": ["src/modules/*"],
+			"@cat-services/*": ["src/services/*"],
+			"@cat-utils/*": ["src/services/*"],
+			"@cat-scripts/*": ["src/scripts/*"],
+			"@cat-configs/*": ["src/configs/*"],
+			"@cat-storage/*": ["src/storage/*"],
+		}
+	},
+	"include": ["src/*.ts", "src/**/*.ts"]
+}

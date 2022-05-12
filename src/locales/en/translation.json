@@ -1,0 +1,103 @@
+{
+	"common": {
+		"voice": {
+			"not_joined": "**{{-icon}} | {{-username}} | **Do not find a channel you are in!!!"
+		}
+	},
+	"precondition": {
+		"owner_only": "**{{- icon }} | {{- author }},** This command can only be used by the owner.",
+		"server_created": {
+			"error": "**{{- icon }} | {{- author }},** Not found or can not create server record"
+		}
+	},
+	"general": {
+		"ping": {
+			"name": "Ping command",
+			"example": "```{{-prefix}}{{alias}}```",
+			"description": "Ping pong"
+		},
+		"server_info": {
+			"name": "Server Information command",
+			"embed_title": "Server information",
+			"embed_id": "ID",
+			"embed_owner": "Owner",
+			"embed_verification": "Verification level",
+			"embed_channels": "Channels",
+			"embed_voice_channels": "Voice channels",
+			"embed_chat_channels": "Chat channels",
+			"embed_role": "Role",
+			"embed_members": "Members",
+			"embed_emojis": "Emojis",
+			"embed_emojis_animate": "Emojis animated",
+			"example": "```{{-prefix}}{{alias}}```",
+			"description": "Get server information"
+		},
+		"bot_info": {
+			"name": "Bot Information command",
+			"embed_key": "Bot information",
+			"embed_id": "ID",
+			"embed_username": "Username",
+			"embed_verified": "Verified",
+			"embed_default_language": "Default language",
+			"cannot_find_info": "Cannot find BotInfo in DB",
+			"un_synchronized": "Saved info has some changes need to be updated",
+			"already_exist": "Bot Info already exist and updated",
+			"create_success": "Successfully created Bot Info",
+			"example": "```{{-prefix}}{{alias}} upadte \n{{-prefix}}{{alias}} create \n{{-prefix}}{{alias}} show```",
+			"description": "Setting bot information"
+		},
+		"db": {
+			"db_unreachable": "Database unreachable!"
+		},
+		"set_server_lng": {
+			"name": "Set Server Language command",
+			"success": "**{{-icon}} | **Current language: {{-lng}}",
+			"error": "**{{-icon}} | **Some error, please try again",
+			"no_support_lng": "**{{-icon}} | {{-botName}}** Does not support this language!!!",
+			"example": "```{{-prefix}}{{alias}} vi \n{{-prefix}}{{alias}} en```",
+			"description": "Set language server"
+		},
+		"prefix": {
+			"name": "Prefix command",
+			"add": "**{{-icon}} | **Added `{{-prefix}}` as new prefix",
+			"list_prefixes": "List of prefixes: `{{-prefixes}}`",
+			"duplicate_prefix": "**{{-icon}} | **`{{-prefix}}` have used!!!",
+			"not_found_prefix": "**{{-icon}} | **Prefix `{{-prefix}}` not found!!!",
+			"can_not_remove": "**{{-icon}} | **Can not remove prefix `{{-prefix}}`!!! At least one prefix in guild.",
+			"remove": "**{{-icon}} | **Prefix `{{-prefix}}` has been removed",
+			"example": "```{{-prefix}}{{alias}} add {prefix}```",
+			"description": "Config bot prefix"
+		},
+		"help": {
+			"name": "Help command",
+			"embed_list": "Here is the list of commands of **{{-botName}}**!!! \n For more info on a specific command, use `{{-prefix}}help {command}`",
+			"embed_title": "{{-command}} command",
+			"embed_aliases": "Aliases",
+			"embed_description": "Description",
+			"embed_example": "Example command",
+			"not_have_command": "**{{-icon}} | {{-botName}}** does not supported this command!!!",
+			"not_have_permission": "**{{-icon}} | {{-username}} | **You do not have permission to use this command!!!",
+			"example": "```{{-prefix}}{{alias}}```",
+			"description": "List of command"
+		},
+		"set_bitrate": {
+			"name": "Set bitrate command",
+			"example": "```{{-prefix}}{{alias}} {bitrate}```",
+			"description": "Set bitrate of voice channel",
+			"illegal": "**{{-icon}} | {{-username}} | **Your channel only allow bitrate {{-min_bitrate}}kbps - {{-max_bitrate}}kbps!!!"
+		},
+		"change_region": {
+			"name": "Change Region command",
+			"example": "```{{-prefix}}{{alias}} {region} | {list}```",
+			"description": "Set region for voice channel and get regions list",
+			"illegal": "**{{-icon}} | {{-username}} | **Region is illegal!!! \n Use `{{-prefix}}{{alias}} {list}` to get list regions."
+		}
+	},
+	"event": {
+		"message_create": {
+			"warning_invite_link": "**{{-icon}} | {{-author}} | **Please don't send the invite links from another server!!!"
+		},
+		"mention_prefix": "My prefix(es) in this guild is: `{{-prefixes}}`",
+		"global_error": "**{{-icon}} | {{-author}} | **Something went wrong, try it later!!!"
+	}
+}

@@ -1,0 +1,11 @@
+src/.env.*
+!src/.env.example
+node_modules
+package-lock.json
+yarn.lock
+dist/
+.vs/
+.idea/
+.DS_Store
+/src/.env
+yarn-error.log
